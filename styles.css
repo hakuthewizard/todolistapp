@@ -1,0 +1,125 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(0, 0, 0);
+    font-family: 'JetBrains Mono', monospace;
+ 
+    
+
+}
+header {
+    display: flex;
+    font-size: 56px;
+    justify-content: center;
+    align-items: center;
+    max-width:40vw;
+    z-index: -1;
+    height:100vh;
+    transform: rotate(-90deg);
+    color:rgb(123, 0, 255);
+
+    
+
+}
+.input-todo {
+    font-size: 48px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    padding:0;
+    max-width: 50vw;
+    z-index: 999;
+    box-shadow: -10px -10px rgb(32, 32, 32);
+    
+}
+::placeholder{
+    font-family:'JetBrains Mono', monospace;
+}
+input, select ,textarea {
+    font-family:'JetBrains Mono', monospace;
+}
+.add-button {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(123, 0, 255);
+    color: white;
+    border: 2px solid white;
+    border-radius: 24px;
+    font-size: 32px;
+    display: block;
+    margin: 16px;
+    font-family:'JetBrains Mono', monospace;
+    z-index: 999;
+    box-shadow: -5px -5px rgb(163, 82, 250);
+}
+
+::placeholder {
+    color:rgb(157, 67, 253);
+
+}
+
+.todoList {
+    display:block;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+li {
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0.2rem;
+    list-style:circle;
+    color:rgb(123, 0, 255);
+    display: block;
+    z-index: 999;
+    max-width: 30vw;
+    box-shadow: -5px -5px rgb(163, 82, 250);
+    
+
+}
+.done-button {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(123, 0, 255);
+    border-radius: 24px;
+    top:auto;
+    margin:0.2rem;
+    font-size: 10px;
+    z-index: 999;
+    padding:8px;
+    font-family:'JetBrains Mono', monospace;
+
+}
+.delete-button {
+ text-decoration: none;
+ cursor: pointer;
+ background-color: rgb(0, 0, 0);
+ color: white;
+ border: 2px solid white;
+ border-radius: 24px;
+ top:auto;
+ font-size: 10px;
+ padding:8px;
+ font-family:'JetBrains Mono', monospace;
+}
+@media screen and (max-width: 600px) {
+    input[type="text"] {
+      width: 100%;
+      margin: 0;
+    }
+  }
