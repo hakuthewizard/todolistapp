@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(0, 0, 0);
+    background: linear-gradient(rgb(190, 129, 255),rgb(255, 255, 255));
     font-family: 'JetBrains Mono', monospace;
  
     
@@ -21,16 +21,16 @@ header {
     z-index: -1;
     height:100vh;
     transform: rotate(-90deg);
-    color:rgb(123, 0, 255);
-
-    
+    color:rgb(190, 129, 255);
+    border: solid 0.2rem rgb(190, 129, 255);
+    border-radius: 2rem;
 
 }
 .input-todo {
     font-size: 48px;
     text-decoration: none;
     background-color: rgb(255, 255, 255);
-    border: 2px solid white;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -39,7 +39,7 @@ header {
     padding:0;
     max-width: 50vw;
     z-index: 999;
-    box-shadow: -10px -16px rgb(71, 71, 71);
+    box-shadow: -10px -10px rgb(0, 0, 0);
     
 }
 ::placeholder{
@@ -51,9 +51,9 @@ input, select ,textarea {
 .add-button {
     text-decoration: none;
     cursor: pointer;
-    background-color: rgb(123, 0, 255);
+    background: linear-gradient(rgb(174, 97, 255),rgb(255, 255, 255));
     color: white;
-    border: 2px solid white;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 24px;
     font-size: 32px;
     display: block;
@@ -64,6 +64,9 @@ input, select ,textarea {
 }
     .add-button:hover{
         color: rgb(0, 0, 0);
+    }
+    .add-button:active {
+        font-size: 30px;
     }
 ::placeholder {
     color:rgb(157, 67, 253);
