@@ -19,7 +19,7 @@ to_Do_Div.classList.add("todo");
 const new_To_Do_Item = document.createElement("li");
 new_To_Do_Item.classList.add("todo");
 
-new_To_Do_Item.innerText=todoInput.value;
+new_To_Do_Item.textContent=todoInput.value;
 
 to_Do_Div.appendChild(new_To_Do_Item);
 
@@ -34,7 +34,7 @@ const doneButton = document.createElement("button");
 doneButton.classList.add("done-button");
 to_Do_Div.appendChild(doneButton);
 doneButton.addEventListener("click", doneToDo);
-doneButton.innerHTML='done';
+doneButton.textContent='done';
 function doneToDo(event) {
     event.preventDefault();
     new_To_Do_Item.style.backgroundColor ="rgb(161, 129, 235)";
@@ -44,7 +44,7 @@ const deleteButton = document.createElement("button");
 deleteButton.classList.add("delete-button");
 to_Do_Div.appendChild(deleteButton);
 deleteButton.addEventListener("click", deleteToDo);
-deleteButton.innerHTML='delete';
+deleteButton.textContent='delete';
 function deleteToDo(event) {
     event.preventDefault();
     new_To_Do_Item.remove();
@@ -80,7 +80,7 @@ to_Do_Div.classList.add("todo");
 
 const new_To_Do_Item = document.createElement("li");
 
-new_To_Do_Item.innerText=todo;
+new_To_Do_Item.textContent=todo;
 new_To_Do_Item.classList.add("todo");
 
 to_Do_Div.appendChild(new_To_Do_Item);
@@ -91,7 +91,7 @@ const doneButton = document.createElement("button");
 doneButton.classList.add("done-button");
 to_Do_Div.appendChild(doneButton);
 doneButton.addEventListener("click", doneToDo);
-doneButton.innerHTML='done';
+doneButton.textContent='done';
 function doneToDo(event) {
     event.preventDefault();
     new_To_Do_Item.style.backgroundColor ="rgb(161, 129, 235)";
@@ -101,7 +101,7 @@ const deleteButton = document.createElement("button");
 deleteButton.classList.add("delete-button");
 to_Do_Div.appendChild(deleteButton);
 deleteButton.addEventListener("click", deleteToDo);
-deleteButton.innerHTML='delete';
+deleteButton.textContent='delete';
 function deleteToDo(event) {
     event.preventDefault();
     new_To_Do_Item.remove();
